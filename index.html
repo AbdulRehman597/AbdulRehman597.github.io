@@ -1,329 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Rehman — ML Engineer & Developer</title>
-  <meta name="description" content="Abdul Rehman — Student Developer & ML Engineer building intelligent systems and clean digital experiences." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Rehman — ML Engineer & Developer</title>
+    <meta name="description" content="Portfolio of Abdul Rehman — Student Developer & ML Engineer building practical, impactful software." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-canvas" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
-  <!-- Custom cursor (desktop only) -->
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
+    <!-- ─── Header ─── -->
+    <header class="site-header">
+      <a href="#home" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Abdul Rehman
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Grain noise overlay -->
-  <div class="noise" aria-hidden="true"></div>
+    <!-- ─── Main ─── -->
+    <main id="home" class="layout">
 
-  <!-- Scroll progress bar -->
-  <div class="scroll-bar" aria-hidden="true"></div>
-
-  <!-- ========== HEADER ========== -->
-  <header class="site-header" id="site-header">
-    <a href="#home" class="brand">
-      <div class="brand-monogram">AR</div>
-      <span class="brand-name">Abdul Rehman</span>
-    </a>
-
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about"      data-num="01">About</a>
-      <a href="#projects"   data-num="02">Projects</a>
-      <a href="#skills"     data-num="03">Skills</a>
-      <a href="#experience" data-num="04">Experience</a>
-      <a href="#contact"    data-num="05">Contact</a>
-    </nav>
-  </header>
-
-  <!-- ========== MAIN ========== -->
-  <main id="home">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="orb orb-amber"></div>
-        <div class="orb orb-teal"></div>
-        <div class="grid-overlay"></div>
-      </div>
-
-      <div class="hero-inner">
-        <p class="eyebrow">
-          <span class="mono tag">// init</span>
-          Student Developer &amp; ML Engineer
-        </p>
-
-        <h1>
-          Hi, I'm Abdul<br>
-          <em class="h1-em">Rehman.</em>
-        </h1>
-
-        <p class="hero-sub">
-          I build
-          <span class="typewriter" data-words='["intelligent systems","ML pipelines","full-stack apps","practical solutions"]'></span><span class="tw-cursor" aria-hidden="true">|</span>
-        </p>
-
-        <p class="hero-desc">
-          Focused on reliability, clean design, and measurable impact —
-          from first commit to final deployment.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">
-            View Projects
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#contact">Let's Connect</a>
-        </div>
-
-        <div class="hero-stats" aria-label="Quick highlights">
-          <div class="stat">
-            <strong>3+</strong>
-            <span>ML Projects</span>
+      <!-- HERO -->
+      <section class="hero glass reveal">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Student Developer &amp; ML Engineer
+          </p>
+          <h1>Hi, I'm <span class="name-gradient">Abdul Rehman.</span></h1>
+          <p class="hero-lead">
+            I build practical ML-powered experiences — focused on reliability,
+            clean design, and measurable impact.
+          </p>
+          <div class="hero-actions">
+            <a class="cta cta-primary" href="#projects">View Projects →</a>
+            <a class="cta cta-secondary" href="#contact">Let's Connect</a>
           </div>
-          <div class="stat-rule" aria-hidden="true"></div>
-          <div class="stat">
-            <strong>5+</strong>
-            <span>Core Skills</span>
-          </div>
-          <div class="stat-rule" aria-hidden="true"></div>
-          <div class="stat">
-            <strong>1</strong>
-            <span>AI Internship</span>
+          <div class="hero-stats" aria-label="Quick stats">
+            <div class="stat">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">ML Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">8</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">1</span>
+              <span class="stat-label">AI Internship</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="scroll-cue" aria-hidden="true">
-        <span class="mono">scroll</span>
-        <div class="scroll-cue-line"></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="section-wrap">
-        <div class="section-tag mono">01 / About</div>
-        <div class="about-grid">
-          <div class="about-left">
-            <h2>Building at the<br>intersection of<br><em>intelligence &amp; craft.</em></h2>
+        <!-- Terminal widget -->
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">~/portfolio</span>
           </div>
-          <div class="about-right">
+          <div class="terminal-body" id="terminal-body">
+            <!-- filled by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section glass reveal">
+        <div class="section-header">
+          <span class="section-label">About</span>
+          <h2>Who I Am</h2>
+        </div>
+        <p class="section-lead">
+          I'm a student developer passionate about machine learning, full-stack development,
+          and building things that solve real problems. I care about writing clean code,
+          thinking deeply about systems, and shipping work that actually holds up.
+        </p>
+        <p class="section-lead" style="margin-top: 0.85rem;">
+          Outside of engineering, I'm drawn to the intersection of models and products — how
+          intelligent systems can be made both useful and trustworthy.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section glass reveal">
+        <div class="section-header">
+          <span class="section-label">Work</span>
+          <h2>Projects</h2>
+        </div>
+        <p class="section-lead">A selection of things I've built — each targeting a real problem with pragmatic ML.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📄</div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <h3>Intelligent Resume Analyzer</h3>
             <p>
-              I'm a student developer passionate about machine learning,
-              full-stack development, and solving real-world problems
-              through thoughtful engineering.
+              ML-assisted screening tool that extracts skills, scores role fit,
+              and presents recruiter-friendly structured insights.
             </p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎯</div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <h3>Campus Event Recommendation Engine</h3>
             <p>
-              Whether it's training a model, designing an API, or crafting
-              a responsive interface — I care deeply about how things work
-              and how they feel to the people using them.
+              Recommendation pipeline using collaborative filtering and
+              preference signals to surface relevant events for students.
             </p>
-            <a class="btn-text-link" href="#contact">
-              Open to opportunities
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-wrap">
-        <div class="section-tag mono">02 / Projects</div>
-        <h2>Selected <em>Work</em></h2>
-
-        <div class="projects-grid">
-
-          <article class="project-card">
-            <div class="card-body">
-              <span class="card-num mono">01</span>
-              <h3>Intelligent Resume Analyzer</h3>
-              <p>
-                ML-assisted resume screening tool that extracts key skills,
-                scores role fit, and presents recruiter-friendly insights.
-              </p>
-            </div>
-            <div class="card-foot">
-              <div class="tech-tags">
-                <span>Python</span>
-                <span>NLP</span>
-                <span>Streamlit</span>
-              </div>
-              <a href="#" class="card-arrow" aria-label="View project">
-                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
+            <div class="card-tags">
+              <span class="tag">ML</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="card-body">
-              <span class="card-num mono">02</span>
-              <h3>Campus Event Recommendation Engine</h3>
-              <p>
-                Recommendation pipeline for student events using collaborative
-                filtering and real-time preference signals.
-              </p>
-            </div>
-            <div class="card-foot">
-              <div class="tech-tags">
-                <span>Machine Learning</span>
-                <span>FastAPI</span>
-                <span>PostgreSQL</span>
-              </div>
-              <a href="#" class="card-arrow" aria-label="View project">
-                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📊</div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <h3>Portfolio Analytics Dashboard</h3>
+            <p>
+              Lightweight dashboard tracking visitor engagement and
+              portfolio conversion metrics with live API integration.
+            </p>
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Charts</span>
+              <span class="tag">REST API</span>
             </div>
           </article>
-
-          <article class="project-card featured">
-            <div class="card-badge mono">Featured</div>
-            <div class="card-body">
-              <span class="card-num mono">03</span>
-              <h3>Portfolio Analytics Dashboard</h3>
-              <p>
-                Lightweight dashboard for tracking visitor engagement and
-                portfolio conversion metrics with real-time data visualization.
-              </p>
-            </div>
-            <div class="card-foot">
-              <div class="tech-tags">
-                <span>JavaScript</span>
-                <span>Charts</span>
-                <span>API Integration</span>
-              </div>
-              <a href="#" class="card-arrow" aria-label="View project">
-                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </article>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section-wrap">
-        <div class="section-tag mono">03 / Skills</div>
-        <h2>Tech <em>Arsenal</em></h2>
+      <!-- SKILLS -->
+      <section id="skills" class="section glass reveal">
+        <div class="section-header">
+          <span class="section-label">Toolkit</span>
+          <h2>Skills</h2>
+        </div>
+        <p class="section-lead">Technologies I reach for day-to-day and the depth I'm at with each.</p>
 
-        <div class="skills-grid">
+        <div class="skills-grid" id="skills-grid">
           <div class="skill-group">
-            <p class="group-label mono">// Languages</p>
-            <ul class="pill-list" role="list">
-              <li class="pill">Python</li>
-              <li class="pill">JavaScript</li>
-              <li class="pill">SQL</li>
-            </ul>
+            <h4>Languages &amp; ML</h4>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="92"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Machine Learning</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="80"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Deep Learning</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="70"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
           </div>
+
           <div class="skill-group">
-            <p class="group-label mono">// ML &amp; AI</p>
-            <ul class="pill-list" role="list">
-              <li class="pill teal">Machine Learning</li>
-              <li class="pill teal">Deep Learning</li>
-              <li class="pill teal">NLP</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <p class="group-label mono">// Frameworks</p>
-            <ul class="pill-list" role="list">
-              <li class="pill">FastAPI</li>
-              <li class="pill">React</li>
-              <li class="pill">Streamlit</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <p class="group-label mono">// Tools</p>
-            <ul class="pill-list" role="list">
-              <li class="pill">Git / GitHub</li>
-              <li class="pill">PostgreSQL</li>
-            </ul>
+            <h4>Web &amp; Infrastructure</h4>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="78"></div></div>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="68"></div></div>
+              <span class="skill-pct">68%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">FastAPI</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="72"></div></div>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="section-wrap">
-        <div class="section-tag mono">04 / Experience</div>
-        <h2><em>Where</em> I've Been</h2>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section glass reveal">
+        <div class="section-header">
+          <span class="section-label">History</span>
+          <h2>Experience</h2>
+        </div>
 
         <div class="timeline">
-          <article class="timeline-entry">
-            <div class="tl-dot"></div>
-            <div class="tl-body">
-              <p class="tl-meta mono">AI Internship · Remote</p>
-              <h3>FlyRank</h3>
-              <p>
-                Supported ML experimentation and implementation workflows,
-                contributing to model evaluation, data handling, and internal
-                prototype improvements.
-              </p>
-              <div class="tl-tags">
-                <span>ML Ops</span>
-                <span>Model Evaluation</span>
-                <span>Prototyping</span>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-node"></div>
+              <div class="timeline-stem"></div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-badge">● Active</span>
+              <div class="timeline-role">ML Engineering Intern — FlyRank AI</div>
+              <div class="timeline-meta">
+                AI / Machine Learning
+                <span class="timeline-meta-sep" aria-hidden="true"></span>
+                Remote
               </div>
+              <p class="timeline-desc">
+                Supported ML experimentation and implementation workflows, contributing to
+                model evaluation pipelines, data handling, and internal prototype improvements.
+                Gained hands-on experience with production ML system patterns.
+              </p>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+          </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-border-bottom">
-      <div class="section-wrap">
-        <div class="section-tag mono">05 / Contact</div>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-node" style="background: var(--muted); box-shadow: none;"></div>
+              <div class="timeline-stem"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-role">Computer Science Student</div>
+              <div class="timeline-meta">
+                University
+                <span class="timeline-meta-sep" aria-hidden="true"></span>
+                In Progress
+              </div>
+              <p class="timeline-desc">
+                Pursuing a degree with focus areas in machine learning, algorithms, and
+                software engineering. Actively building side projects alongside coursework
+                to bridge theory and practice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section glass reveal">
+        <div class="section-header">
+          <span class="section-label">Get in Touch</span>
+          <h2>Contact</h2>
+        </div>
+        <p class="section-lead">
+          Open to internships, collaborations, and ML/software opportunities.
+          Drop me a line through any of these channels.
+        </p>
+
         <div class="contact-grid">
-          <div class="contact-left">
-            <h2>Let's Build<br><em>Something.</em></h2>
-          </div>
-          <div class="contact-right">
-            <p class="contact-sub">
-              Open to internships, collaborations, and ML/software opportunities.
-              I'd love to hear from you.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:abd.rehman.cs@gmail.com" class="contact-item">
-                <span class="contact-label mono">Email</span>
-                <span class="contact-value">abd.rehman.cs@gmail.com</span>
-                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
-              <a href="https://linkedin.com/in/im-abdul-rehman" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <span class="contact-label mono">LinkedIn</span>
-                <span class="contact-value">im-abdul-rehman</span>
-                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
-              <a href="https://github.com/abdrehmancs" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <span class="contact-label mono">GitHub</span>
-                <span class="contact-value">abdrehmancs</span>
-                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M7 7h10v10"/></svg>
-              </a>
+          <a href="mailto:abd.rehman.cs@gmail.com" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">abd.rehman.cs@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/im-abdul-rehman" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">in/im-abdul-rehman</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/abdrehmancs" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">⌨️</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">abdrehmancs</div>
+            </div>
+          </a>
+
+          <div class="contact-card" style="cursor: default;">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Open to Remote</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
+    <footer class="site-footer">
+      <p>Designed &amp; built by Abdul Rehman · 2025</p>
+    </footer>
 
-  <footer class="site-footer">
-    <span class="mono">© 2025 Abdul Rehman</span>
-    <span class="mono footer-right">Designed &amp; built with care.</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
