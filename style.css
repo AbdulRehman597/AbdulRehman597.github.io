@@ -176,6 +176,7 @@ h1, h2, h3{ font-family: var(--font-display); font-weight: 600; letter-spacing: 
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  position: relative;
 }
 .nav__logo{
   font-family: var(--font-mono);
@@ -379,7 +380,6 @@ h1, h2, h3{ font-family: var(--font-display); font-weight: 600; letter-spacing: 
 .ring__track{ fill: none; stroke: rgba(255,255,255,0.06); stroke-width: 10; }
 .ring__progress{
   fill: none;
-  stroke: url(#none);
   stroke: var(--accent);
   stroke-width: 10;
   stroke-linecap: round;
@@ -508,7 +508,7 @@ h1, h2, h3{ font-family: var(--font-display); font-weight: 600; letter-spacing: 
 }
 .bento-card__visual::before, .bento-card__visual::after{ content:''; position: absolute; border-radius: 50%; }
 .bento-card__visual--dots::before{ width: 8px; height: 8px; background: var(--accent-2); top: 20px; left: 30px; box-shadow: 60px 40px 0 0 var(--accent), 120px 15px 0 0 var(--accent-pink); }
-.bento-card__visual--dots--alt::before{ box-shadow: 60px 40px 0 0 var(--accent-2), 120px 15px 0 0 var(--accent); }
+.bento-card__visual--dots.bento-card__visual--alt::before{ box-shadow: 60px 40px 0 0 var(--accent-2), 120px 15px 0 0 var(--accent); }
 .bento-card__visual--wave{ background-image: linear-gradient(120deg, transparent 40%, rgba(168,85,247,0.15) 50%, transparent 60%); }
 .bento-card__visual--wave::before{ width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-2), transparent); top: 45px; left: 0; border-radius: 0; }
 .bento-card__visual--bars{ display: flex; align-items: flex-end; gap: 6px; padding: 12px; }
