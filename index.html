@@ -1,318 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul Rehman — ML Engineer & Developer</title>
-    <meta name="description" content="Portfolio of Abdul Rehman — Student Developer & ML Engineer building practical, impactful software." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="bg-canvas" aria-hidden="true"></div>
-    <div class="bg-grid" aria-hidden="true"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rehman — AI Engineer</title>
+<meta name="description" content="Abdul Rehman — AI Engineer building production ML systems and full-stack applications.">
 
-    <!-- ─── Header ─── -->
-    <header class="site-header">
-      <a href="#home" class="brand">
-        <span class="brand-dot" aria-hidden="true"></span>
-        Abdul Rehman
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- ─── Main ─── -->
-    <main id="home" class="layout">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- HERO -->
-      <section class="hero glass reveal">
-        <div class="hero-content">
-          <p class="eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            Student Developer &amp; ML Engineer
-          </p>
-          <h1>Hi, I'm <span class="name-gradient">Abdul Rehman.</span></h1>
-          <p class="hero-lead">
-            I build practical ML-powered experiences — focused on reliability,
-            clean design, and measurable impact.
-          </p>
-          <div class="hero-actions">
-            <a class="cta cta-primary" href="#projects">View Projects →</a>
-            <a class="cta cta-secondary" href="#contact">Let's Connect</a>
-          </div>
-          <div class="hero-stats" aria-label="Quick stats">
-            <div class="stat">
-              <span class="stat-value">3+</span>
-              <span class="stat-label">ML Projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">8</span>
-              <span class="stat-label">Core Skills</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">1</span>
-              <span class="stat-label">AI Internship</span>
-            </div>
-          </div>
+<div class="bg-glow bg-glow--one"></div>
+<div class="bg-glow bg-glow--two"></div>
+<div class="bg-grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-bracket">&lt;</span>Rehman<span class="nav__logo-bracket">/&gt;</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#logs">Experiments</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--ghost">Resume</a>
+      <a href="#contact" class="btn btn--primary">Let's talk</a>
+    </div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Available for select ML &amp; full-stack engagements</p>
+    <h1 class="hero__title">
+      I train the models.<br>
+      Then I ship <span class="text-accent">the whole product.</span>
+    </h1>
+    <p class="hero__sub">
+      Abdul Rehman — AI engineer and full-stack developer. I build, fine-tune, and deploy machine
+      learning systems, then wrap them in interfaces people actually enjoy using.
+    </p>
+    <div class="hero__cta">
+      <a href="#work" class="btn btn--primary btn--lg">View my work <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn--ghost btn--lg">Start a project</a>
+    </div>
+
+    <!-- SIGNATURE MOCKUP: live training dashboard -->
+    <div class="mockup" data-animate="mockup">
+      <div class="mockup__frame">
+        <div class="mockup__topbar">
+          <div class="mockup__dots"><span></span><span></span><span></span></div>
+          <span class="mockup__title">train_run.py — epoch 47/50</span>
+          <span class="mockup__status"><i class="pulse"></i>running</span>
         </div>
 
-        <!-- Terminal widget -->
-        <div class="terminal" aria-hidden="true">
-          <div class="terminal-bar">
-            <span class="terminal-dot red"></span>
-            <span class="terminal-dot yellow"></span>
-            <span class="terminal-dot green"></span>
-            <span class="terminal-title">~/portfolio</span>
-          </div>
-          <div class="terminal-body" id="terminal-body">
-            <!-- filled by JS -->
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section glass reveal">
-        <div class="section-header">
-          <span class="section-label">About</span>
-          <h2>Who I Am</h2>
-        </div>
-        <p class="section-lead">
-          I'm a student developer passionate about machine learning, full-stack development,
-          and building things that solve real problems. I care about writing clean code,
-          thinking deeply about systems, and shipping work that actually holds up.
-        </p>
-        <p class="section-lead" style="margin-top: 0.85rem;">
-          Outside of engineering, I'm drawn to the intersection of models and products — how
-          intelligent systems can be made both useful and trustworthy.
-        </p>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="section glass reveal">
-        <div class="section-header">
-          <span class="section-label">Work</span>
-          <h2>Projects</h2>
-        </div>
-        <p class="section-lead">A selection of things I've built — each targeting a real problem with pragmatic ML.</p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📄</div>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-            <h3>Intelligent Resume Analyzer</h3>
-            <p>
-              ML-assisted screening tool that extracts skills, scores role fit,
-              and presents recruiter-friendly structured insights.
-            </p>
-            <div class="card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Streamlit</span>
+        <div class="mockup__body">
+          <div class="mockup__stats">
+            <div class="stat-card">
+              <span class="stat-card__label">Train Loss</span>
+              <span class="stat-card__value">0.0842</span>
+              <span class="stat-card__trend stat-card__trend--down">▼ 3.1%</span>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🎯</div>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-            <h3>Campus Event Recommendation Engine</h3>
-            <p>
-              Recommendation pipeline using collaborative filtering and
-              preference signals to surface relevant events for students.
-            </p>
-            <div class="card-tags">
-              <span class="tag">ML</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">PostgreSQL</span>
+            <div class="stat-card">
+              <span class="stat-card__label">Val Accuracy</span>
+              <span class="stat-card__value">96.4%</span>
+              <span class="stat-card__trend stat-card__trend--up">▲ 0.8%</span>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📊</div>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-            <h3>Portfolio Analytics Dashboard</h3>
-            <p>
-              Lightweight dashboard tracking visitor engagement and
-              portfolio conversion metrics with live API integration.
-            </p>
-            <div class="card-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Charts</span>
-              <span class="tag">REST API</span>
+            <div class="stat-card stat-card--accent">
+              <span class="stat-card__label">GPU Util</span>
+              <span class="stat-card__value">92%</span>
+              <span class="stat-card__trend">A100 ×4</span>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section id="skills" class="section glass reveal">
-        <div class="section-header">
-          <span class="section-label">Toolkit</span>
-          <h2>Skills</h2>
-        </div>
-        <p class="section-lead">Technologies I reach for day-to-day and the depth I'm at with each.</p>
-
-        <div class="skills-grid" id="skills-grid">
-          <div class="skill-group">
-            <h4>Languages &amp; ML</h4>
-            <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="92"></div></div>
-              <span class="skill-pct">92%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Machine Learning</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="80"></div></div>
-              <span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Deep Learning</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="70"></div></div>
-              <span class="skill-pct">70%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">SQL</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75"></div></div>
-              <span class="skill-pct">75%</span>
+            <div class="stat-card stat-card--accent">
+              <span class="stat-card__label">Latency (p95)</span>
+              <span class="stat-card__value">118ms</span>
+              <span class="stat-card__trend">/predict</span>
             </div>
           </div>
 
-          <div class="skill-group">
-            <h4>Web &amp; Infrastructure</h4>
-            <div class="skill-item">
-              <span class="skill-name">JavaScript</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="78"></div></div>
-              <span class="skill-pct">78%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">React</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="68"></div></div>
-              <span class="skill-pct">68%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">FastAPI</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="72"></div></div>
-              <span class="skill-pct">72%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Git / GitHub</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="85"></div></div>
-              <span class="skill-pct">85%</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section glass reveal">
-        <div class="section-header">
-          <span class="section-label">History</span>
-          <h2>Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-line">
-              <div class="timeline-node"></div>
-              <div class="timeline-stem"></div>
-            </div>
-            <div class="timeline-content">
-              <span class="timeline-badge">● Active</span>
-              <div class="timeline-role">ML Engineering Intern — FlyRank AI</div>
-              <div class="timeline-meta">
-                AI / Machine Learning
-                <span class="timeline-meta-sep" aria-hidden="true"></span>
-                Remote
+          <div class="mockup__panels">
+            <div class="panel panel--chart">
+              <div class="panel__head">
+                <span>Loss curve</span>
+                <span class="panel__legend"><i style="background:var(--accent)"></i>train <i style="background:var(--accent-2)"></i>val</span>
               </div>
-              <p class="timeline-desc">
-                Supported ML experimentation and implementation workflows, contributing to
-                model evaluation pipelines, data handling, and internal prototype improvements.
-                Gained hands-on experience with production ML system patterns.
-              </p>
+              <svg class="chart-bars" viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true">
+                <polyline class="chart-line chart-line--dim" points="0,70 20,66 40,60 60,58 80,50 100,46 120,40 140,35 160,30 180,26 200,22 220,18 240,15 260,12" />
+                <polyline class="chart-line" points="0,80 20,74 40,68 60,60 80,54 100,50 120,42 140,38 160,32 180,27 200,22 220,17 240,13 260,9" />
+              </svg>
             </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-line">
-              <div class="timeline-node" style="background: var(--muted); box-shadow: none;"></div>
-              <div class="timeline-stem"></div>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-role">Computer Science Student</div>
-              <div class="timeline-meta">
-                University
-                <span class="timeline-meta-sep" aria-hidden="true"></span>
-                In Progress
+            <div class="panel panel--terminal">
+              <div class="panel__head"><span>inference.log</span></div>
+              <div class="terminal-lines" id="terminalLines">
+                <p><span class="t-muted">$</span> python inference.py --model bert-finetuned</p>
+                <p><span class="t-accent">[ok]</span> model loaded in 412ms</p>
+                <p><span class="t-accent">[ok]</span> tokenizer ready · vocab 30522</p>
+                <p class="typing-line"><span class="t-muted">&gt;</span> <span id="typingText"></span><span class="cursor">|</span></p>
               </div>
-              <p class="timeline-desc">
-                Pursuing a degree with focus areas in machine learning, algorithms, and
-                software engineering. Actively building side projects alongside coursework
-                to bridge theory and practice.
-              </p>
+            </div>
+          </div>
+
+          <div class="mockup__panels mockup__panels--bottom">
+            <div class="panel panel--ring">
+              <div class="panel__head"><span>Deployment health</span></div>
+              <div class="ring-wrap">
+                <svg viewBox="0 0 120 120" class="ring">
+                  <circle cx="60" cy="60" r="50" class="ring__track"/>
+                  <circle cx="60" cy="60" r="50" class="ring__progress" id="ringProgress"/>
+                </svg>
+                <span class="ring__label">99.9%<small>uptime</small></span>
+              </div>
+            </div>
+            <div class="panel panel--bars">
+              <div class="panel__head"><span>Requests / min</span></div>
+              <div class="bar-row" id="barRow">
+                <span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:50%"></span>
+                <span style="--h:80%"></span><span style="--h:60%"></span><span style="--h:95%"></span>
+                <span style="--h:70%"></span><span style="--h:85%"></span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section glass reveal">
-        <div class="section-header">
-          <span class="section-label">Get in Touch</span>
-          <h2>Contact</h2>
+  <!-- STACK STRIP -->
+  <section class="stack-strip" id="stack">
+    <p class="stack-strip__label">Tools I reach for daily</p>
+    <div class="stack-strip__grid">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>TensorFlow</span>
+      <span>Hugging Face</span>
+      <span>LangChain</span>
+      <span>OpenAI API</span>
+      <span>FastAPI</span>
+      <span>Docker</span>
+      <span>React</span>
+      <span>Next.js</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+      <span>AWS</span>
+      <span>Shopify Liquid</span>
+      <span>Git</span>
+    </div>
+  </section>
+
+  <!-- INTRO / WHY -->
+  <section class="intro">
+    <h2 class="section-title">One engineer, the full pipeline.</h2>
+    <p class="section-sub">
+      Most ML work dies in a notebook. I care about the other 80% — the API, the interface,
+      the monitoring — because a model nobody can reach isn't a product.
+    </p>
+
+    <div class="intro__grid">
+      <div class="intro-card">
+        <span class="intro-card__icon">⚡</span>
+        <h3>Production-ready models</h3>
+        <p>Fine-tuned, quantized, and served — not just accurate in a notebook, but fast and stable under real traffic.</p>
+      </div>
+      <div class="intro-card">
+        <span class="intro-card__icon">⏱</span>
+        <h3>Fast iteration cycles</h3>
+        <p>Tight feedback loops between experiment and deployment mean features go from idea to production in days, not sprints.</p>
+      </div>
+      <div class="intro-card">
+        <span class="intro-card__icon">◆</span>
+        <h3>Full-stack delivery</h3>
+        <p>From data pipeline to polished frontend, one person who understands the whole system end to end.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES BENTO -->
+  <section class="capabilities" id="capabilities">
+    <h2 class="section-title">What I build with</h2>
+    <p class="section-sub">
+      Six areas I work in most, and where each one earns its place in a product.
+    </p>
+
+    <div class="bento">
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--dots"></div>
+        <h3>Model Fine-Tuning</h3>
+        <p>Adapting open-weight LLMs and vision models with LoRA / QLoRA for domain-specific tasks and tight latency budgets.</p>
+      </div>
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--wave"></div>
+        <h3>LLM &amp; RAG Systems</h3>
+        <p>Retrieval-augmented pipelines with LangChain and vector stores, grounded in real data instead of hallucinated answers.</p>
+      </div>
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--bars"></div>
+        <h3>API &amp; Backend</h3>
+        <p>FastAPI and Node services that wrap models behind clean, versioned, well-documented endpoints.</p>
+      </div>
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--dots bento-card__visual--alt"></div>
+        <h3>Frontend Engineering</h3>
+        <p>React and Next.js interfaces with the same craft I'd put into a design system — fast, accessible, and detailed.</p>
+      </div>
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--ring"></div>
+        <h3>Data Pipelines</h3>
+        <p>ETL and feature pipelines that keep training data clean, versioned, and reproducible from source to model.</p>
+      </div>
+      <div class="bento-card" data-animate="fade-up">
+        <div class="bento-card__visual bento-card__visual--wave bento-card__visual--alt"></div>
+        <h3>Deployment &amp; MLOps</h3>
+        <p>Dockerized services on AWS/GCP with monitoring and rollback, so a model degrading in production gets caught fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="work" id="work">
+    <h2 class="section-title">Featured work</h2>
+    <p class="section-sub">A few projects that shaped how I build now.</p>
+
+    <div class="work-grid">
+      <article class="work-card work-card--lg">
+        <span class="work-card__tag">ML · NLP</span>
+        <h3>Support Ticket Triage Model</h3>
+        <p>Fine-tuned DistilBERT classifier that routes incoming support tickets by intent and urgency, cutting manual triage time by 70% for a mid-size SaaS team.</p>
+        <ul class="work-card__stack">
+          <li>PyTorch</li><li>Hugging Face</li><li>FastAPI</li><li>Docker</li>
+        </ul>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__tag">LLM · RAG</span>
+        <h3>Docs Q&amp;A Assistant</h3>
+        <p>Retrieval-augmented chat assistant over internal documentation, built with LangChain and a Postgres vector store.</p>
+        <ul class="work-card__stack">
+          <li>LangChain</li><li>OpenAI API</li><li>pgvector</li>
+        </ul>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__tag">Full-Stack</span>
+        <h3>Shopify Cart Intelligence</h3>
+        <p>Custom sticky add-to-cart component with live variant pricing and a lightweight recommendation model, shipped on a live Shopify storefront.</p>
+        <ul class="work-card__stack">
+          <li>Liquid</li><li>JavaScript</li><li>Shopify API</li>
+        </ul>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__tag">Computer Vision</span>
+        <h3>Defect Detection Prototype</h3>
+        <p>YOLOv8-based inspection pipeline for identifying surface defects from production-line camera feeds in near real time.</p>
+        <ul class="work-card__stack">
+          <li>YOLOv8</li><li>OpenCV</li><li>ONNX Runtime</li>
+        </ul>
+      </article>
+
+      <article class="work-card">
+        <span class="work-card__tag">Web App</span>
+        <h3>Portfolio Analytics Dashboard</h3>
+        <p>React dashboard visualizing model performance metrics in real time, built on top of a FastAPI metrics service.</p>
+        <ul class="work-card__stack">
+          <li>React</li><li>Recharts</li><li>FastAPI</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIMENT LOG (second mockup, mirrors reference list UI) -->
+  <section class="logs" id="logs">
+    <h2 class="section-title">Recent experiment log</h2>
+    <p class="section-sub">A running record of runs, not just the ones that made it to production.</p>
+
+    <div class="mockup mockup--table" data-animate="mockup">
+      <div class="mockup__frame">
+        <div class="mockup__topbar">
+          <div class="mockup__dots"><span></span><span></span><span></span></div>
+          <span class="mockup__title">experiments · runs.db</span>
+          <span class="mockup__status"><i class="pulse"></i>synced</span>
         </div>
-        <p class="section-lead">
-          Open to internships, collaborations, and ML/software opportunities.
-          Drop me a line through any of these channels.
-        </p>
-
-        <div class="contact-grid">
-          <a href="mailto:abd.rehman.cs@gmail.com" class="contact-card">
-            <div class="contact-icon" aria-hidden="true">✉️</div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">abd.rehman.cs@gmail.com</div>
-            </div>
-          </a>
-
-          <a href="https://linkedin.com/in/im-abdul-rehman" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="contact-icon" aria-hidden="true">💼</div>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">in/im-abdul-rehman</div>
-            </div>
-          </a>
-
-          <a href="https://github.com/abdrehmancs" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="contact-icon" aria-hidden="true">⌨️</div>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">abdrehmancs</div>
-            </div>
-          </a>
-
-          <div class="contact-card" style="cursor: default;">
-            <div class="contact-icon" aria-hidden="true">📍</div>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Open to Remote</div>
-            </div>
+        <div class="log-table">
+          <div class="log-row log-row--head">
+            <span>Run</span><span>Model</span><span>Metric</span><span>Status</span><span>Duration</span>
           </div>
+          <div class="log-row"><span>#128</span><span>bert-triage-v3</span><span class="metric metric--cyan">96.4% acc</span><span class="badge badge--live">deployed</span><span>2h 14m</span></div>
+          <div class="log-row"><span>#127</span><span>rag-docs-embed</span><span class="metric metric--orange">0.89 recall</span><span class="badge badge--live">deployed</span><span>41m</span></div>
+          <div class="log-row"><span>#126</span><span>yolov8-defect</span><span class="metric metric--cyan">0.91 mAP</span><span class="badge badge--pending">staging</span><span>3h 02m</span></div>
+          <div class="log-row"><span>#125</span><span>lora-support-ft</span><span class="metric metric--cyan">0.084 loss</span><span class="badge badge--live">deployed</span><span>5h 51m</span></div>
+          <div class="log-row"><span>#124</span><span>reco-model-v2</span><span class="metric metric--pink">0.77 ndcg</span><span class="badge badge--failed">archived</span><span>1h 09m</span></div>
+          <div class="log-row"><span>#123</span><span>bert-triage-v2</span><span class="metric metric--orange">92.1% acc</span><span class="badge badge--pending">staging</span><span>2h 03m</span></div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-      <p>Designed &amp; built by Abdul Rehman · 2025</p>
-    </footer>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-block">
+      <span class="stat-block__num" data-count="14">0</span><span class="stat-block__suffix">+</span>
+      <p>Models shipped to production</p>
+    </div>
+    <div class="stat-block">
+      <span class="stat-block__num" data-count="99">0</span><span class="stat-block__suffix">.9%</span>
+      <p>Average deployment uptime</p>
+    </div>
+    <div class="stat-block">
+      <span class="stat-block__num" data-count="120">0</span><span class="stat-block__suffix">ms</span>
+      <p>Typical inference latency</p>
+    </div>
+    <div class="stat-block">
+      <span class="stat-block__num" data-count="30">0</span><span class="stat-block__suffix">+</span>
+      <p>Projects built end to end</p>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- CONTACT / CTA -->
+  <section class="cta" id="contact">
+    <h2 class="section-title">Have a model that needs to ship?</h2>
+    <p class="section-sub">Tell me what you're building. I'll reply within a day.</p>
+
+    <form class="cta-form" id="contactForm">
+      <input type="email" id="emailInput" placeholder="you@company.com" required aria-label="Your email">
+      <button type="submit" class="btn btn--primary">Send message <span class="arrow">→</span></button>
+    </form>
+    <p class="cta-form__note" id="formNote">No spam, no newsletters — just a reply from me.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Abdul Rehman. Built from scratch, deployed on GitHub Pages.</p>
+  <div class="footer__links">
+    <a href="#" aria-label="GitHub">GitHub</a>
+    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    <a href="#" aria-label="Email">Email</a>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
 </html>
