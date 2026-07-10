@@ -213,7 +213,7 @@ h1, h2, h3{ font-family: var(--font-display); font-weight: 600; letter-spacing: 
 .hero{
   max-width: 900px;
   margin: 0 auto;
-  padding: 5.5rem 1.6rem 2rem;
+  padding: 1.5rem 1.6rem 2rem;
   text-align: center;
 }
 .hero__avatar{
